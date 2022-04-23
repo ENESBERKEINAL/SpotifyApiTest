@@ -6,7 +6,7 @@ import io.restassured.specification.RequestSpecification;
 public class RequestSpec {
     RequestSpecification requestSpecification;
     private String baseUrl = "https://api.spotify.com/v1";
-    private String token = "BQAa9qR8U3TzYZeHI2NHXCSCCfOI79f3ozHaFQpsJorszaDVME2QkZjZ1C5buqwNvqIuTzdjNX_U7tF8EitRKeJ5_xh03AlJrppd89Rnf4rA-Xq0vh8tw7ybZBI1_dzf4LojOpmUa9ToX6EvfkMa_TPgI3cnsWyjZOr3YVvoROSAYt5Z29nhksilF3UtyUVlBwbRWffGbsy5AJ8zV011NBiC_CEQ7O7PDucDhw2qOlzjeaiO6ulg4eJDpAospsx5RDL66wvUbJ0BnyuztuVL7VlRysBTxKlBqTllABEE";
+    private String token = "BQCGyyUAQTU5T6bUaGyV16f6x2LKyMbyBehx4vo-J9y9CqMhoTZRCS2GtPtYJf0X9KElscKpEh3Tlr5tVBSVEs8zf9Fi1CMU8wUqJg2RT-NMWxv48Fxwoz_Pi91fnZDaX_lY6OI1AS0nTD5YwZJVPB_fW5T_EJfUOTfS2NJSJ3qofjRyQlVXkRUGZd5vEqCHzUyWJf9MW5SMcTzA_krOguLXj4BYSd-j9q-fJ7RrBqZ6W7XTdKbt3b1XFuMP6--urcOKrkF0tZFSRtaAAbZNmb3BWlqjAcmLyIHGSAAC";
     public RequestSpec(){
         requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)

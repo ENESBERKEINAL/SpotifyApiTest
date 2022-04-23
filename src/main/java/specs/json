@@ -1,0 +1,159 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?query=roadhouse+blues&type=artist&offset=0&limit=20",
+        "items": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3exjWDXbS4AMSctb2APw6f"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 32
+                },
+                "genres": [
+
+                ],
+                "href": "https://api.spotify.com/v1/artists/3exjWDXbS4AMSctb2APw6f",
+                "id": "3exjWDXbS4AMSctb2APw6f",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273b00540bf27a3d27624370daf",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02b00540bf27a3d27624370daf",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851b00540bf27a3d27624370daf",
+                        "width": 64
+                    }
+                ],
+                "name": "Tripple Threat Roadhouse Blues Band",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:3exjWDXbS4AMSctb2APw6f"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 20971213
+                },
+                "genres": [
+                    "hard rock",
+                    "metal",
+                    "old school thrash",
+                    "rock",
+                    "thrash metal"
+                ],
+                "href": "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+                "id": "2ye2Wgw4gimLv2eAKyk1NB",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb8101d13bdd630b0889acd2fd",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab676161000051748101d13bdd630b0889acd2fd",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f1788101d13bdd630b0889acd2fd",
+                        "width": 160
+                    }
+                ],
+                "name": "Metallica",
+                "popularity": 84,
+                "type": "artist",
+                "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1arvM1AfReNyHsh9n8E2bR"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 81
+                },
+                "genres": [
+
+                ],
+                "href": "https://api.spotify.com/v1/artists/1arvM1AfReNyHsh9n8E2bR",
+                "id": "1arvM1AfReNyHsh9n8E2bR",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273bb9258c66a756c7abe0945f8",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02bb9258c66a756c7abe0945f8",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851bb9258c66a756c7abe0945f8",
+                        "width": 64
+                    }
+                ],
+                "name": "Roadhouse Blues Band",
+                "popularity": 7,
+                "type": "artist",
+                "uri": "spotify:artist:1arvM1AfReNyHsh9n8E2bR"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/22WZ7M8sxp5THdruNY3gXt"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 6584209
+                },
+                "genres": [
+                    "acid rock",
+                    "classic rock",
+                    "psychedelic rock",
+                    "rock"
+                ],
+                "href": "https://api.spotify.com/v1/artists/22WZ7M8sxp5THdruNY3gXt",
+                "id": "22WZ7M8sxp5THdruNY3gXt",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb440959e022afc20e819050bd",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab67616100005174440959e022afc20e819050bd",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f178440959e022afc20e819050bd",
+                        "width": 160
+                    }
+                ],
+                "name": "The Doors",
+                "popularity": 76,
+                "type": "artist",
+                "uri": "spotify:artist:22WZ7M8sxp5THdruNY3gXt"
+            }
+        ],
+        "limit": 20,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 4
+    }
+}

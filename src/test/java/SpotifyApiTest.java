@@ -1,12 +1,15 @@
 import io.restassured.RestAssured;
+import jdk.jfr.Description;
 import org.junit.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import java.io.IOException;
+import specs.Item;
+import specs.artistDTO;
 
-import static io.restassured.RestAssured.given;
+import java.io.IOException;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 public class SpotifyApiTest extends Service{
 
@@ -17,42 +20,51 @@ public class SpotifyApiTest extends Service{
     }
 
     @Test
+    @Description("Check user detailed infos and create/delete some tracks for user")
     public void spotifyTest() throws IOException {
-        getUserAllDetail();
-        checkEmail(emailEnes);
+        shouldGetUserAllDetail();
+        shouldCheckEmail(emailEnes);
 
-        getUserId();
+        shouldGetUserId();
 
-        String id = searchArtist();
-        id = "43ZHCT0cAZBISjO8DG9PnE";
-        topTracks(id);
+        artistDTO artist = shouldSearchArtist();
+        List<Item> itemsList = artist.getArtist().getItems();
+        String id = itemsList.get(0).getID();
 
+        shouldGetTopTracksForSpesificID(id);
 
-        createNewPlaylist();
+        shouldCreateNewPlaylist();
 
         String trackName0 = "Jimi Hendrix";
         String trackName1 = "The Knack";
         String trackName2 = "The Beatles";
 
-        Assert.assertEquals(getPlaylistName(),"roadhouse blues");
-        System.out.println(getPlaylistName());
+        Assert.assertEquals(shouldGetPlaylistName(),"roadhouse blues");
+        System.out.println("Play list Name: " + shouldGetPlaylistName());
 
-        String trackUri0 = getTrackUri(trackName0);
-        addItemsToPlaylist(trackUri0);
+        String trackUri0 = shouldGetTrackUriWithTrackName(trackName0);
+        shouldAddItemsToPlaylist(trackUri0);
 
-        String trackUri1 = getTrackUri(trackName1);
-        addItemsToPlaylist(trackUri1);
+        String trackUri1 = shouldGetTrackUriWithTrackName(trackName1);
+        shouldAddItemsToPlaylist(trackUri1);
 
-        String trackUri2 = getTrackUri(trackName2);
-        addItemsToPlaylist(trackUri2);
+        String trackUri2 = shouldGetTrackUriWithTrackName(trackName2);
+        shouldAddItemsToPlaylist(trackUri2);
 
-        assertEquals(trackUri0,isItemAdded());
+        assertEquals(trackUri0, shouldCheckIsItemAdded());
 
-        deleteTrack(trackName0);
-
-
+        shouldDeleteTrack(trackName0);
 
 
+
+
+    }
+
+    @Test(enabled = false)
+    @Description("Get Auth token from spotify api for dynamic request flow")
+    public void getAuthToken() throws IOException {
+        Helper helper = new Helper();
+        helper.shouldGetAuthTokenFromSpotifyApiUsingSecretKeys();
     }
 
 
